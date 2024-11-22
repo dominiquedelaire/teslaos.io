@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>Paramètres TeslaOS.io</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+
+<body style="background-color: #000000;">
+    <div class="container mt-5">
+        <h2>Paramètres de l'application</h2>
+        <form id="settingsForm">
+          <div class="form-group">
+            <label for="zoom">Zoom (2 à 20)</label>
+            <input type="number" class="form-control" id="zoom" name="zoom" min="2" max="20" required>
+          </div>
+          <div class="form-group">
+            <label for="model">Modèle de la voiture</label>
+            <select class="form-control" id="model" name="model" required>
+              <option value="modele 3">Modèle 3</option>
+              <option value="modele y">Modèle Y</option>
+              <option value="modele x">Modèle X</option>
+              <option value="modele s">Modèle S</option>
+              <option value="cybertruck">Cybertruck</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="refresh">Rafraichissement (3 à 25 secondes)</label>
+            <input type="number" class="form-control" id="refresh" name="refresh" min="3" max="25" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Sauvegarder</button>
+        </form>
+      </div>
+      
+
+
+</body>
+
+</html>
